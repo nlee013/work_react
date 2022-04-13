@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const arr1 = [10,20,30,40,50]
+
+        // for(let i = 0;i<arr1.length;i++){
+        //     console.log(i + ":" + arr1[i])
+        // }
+        // // of는 데이터가 나온다
+        // for(let item of arr1){
+        //     console.log(item)
+        // }
+        // console.log("-------------")
+        // // in은 인덱스가 나온다
+        // for(let item in arr1){
+        //     console.log(item)
+        // }
+
+        // 자바스크립트의 반복문
+        arr1.map((item,index)=>{
+            return(console.log(item,index))
+        })
+        console.log("-------------")
+        arr1.map((item,index)=>{
+           console.log(item,index)
+        })
+        console.log("-------------")
+        arr1.map((item,index)=>console.log(index,item))
+        console.log("-------------")
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

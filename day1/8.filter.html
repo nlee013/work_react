@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const arr = [10, 30, 40, 50, 80, 100, 30]
+        //배열.filter(변수=>조건):[]결과는 배열
+
+        const result1 = arr.filter(item => item > 50);
+        console.log(result1);
+
+        //filter 많이 사용. 버젼이 바뀐건 =을 3번 사용
+        const result2 = arr.filter(item => item === 50);
+        console.log(result2);
+
+        //삭제처럼 나중에 사용
+        //30이 아닌 data
+        const result3 = arr.filter(item => item !==30);
+        console.log(result3);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
