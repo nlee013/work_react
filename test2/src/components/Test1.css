@@ -1,0 +1,21 @@
+.con-box{
+    width: 500px;
+    display: flex;
+    border: 1px solid rgb(113, 230, 226);
+    padding: 20px; 
+}
+
+.con-box article{
+    width: 100px;
+    margin-right: 10px;
+    height: 80px;
+    background: rgb(212, 172, 245);
+    text-align: center;
+    line-height: 80px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.con-box article:hover{
+    background: rgb(239, 236, 146);
+}
