@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+
+</head>
+<body>
+
+    <div id="root">화면에 보여질 부분</div>
+
+    <script type="text/babel">
+
+        //babel:최신 js 문법(ES6)으로 작성된 code를 ES5문법으로 변환해준다
+        //ECMAScript 2015(ES6)-기본적으로 많이 사용
+        //ECMAScript 2015(ES7)
+
+        //js 변수
+        const name = '졸려요';
+        const age = 26;
+        const addr = '집'
+
+        //JSX영역
+        //js 변수는 {}로 묶어 사용
+        const el = (
+            <div>
+                <h2>신상 명세서</h2>
+                <ul>
+                    <li>이름:{name}</li>
+                    <li>나이:{age}</li>
+                    <li>주소:{addr}</li>
+                </ul>
+            </div>
+
+        )//가상 dom
+
+        //실제 돔에 출력?
+        const dom = document.querySelector("#root");//실제 dom
+
+        ReactDOM.render(el, dom);
+
+    </script>
+    
+</body>
+</html>
